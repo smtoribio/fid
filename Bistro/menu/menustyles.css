@@ -13,10 +13,7 @@ header {
   padding: 3em 1em 2em 1em;
   text-align: center;
   background: url(images/reddot.png) center top repeat-x;
-  background: 
-    url(images/reddot.png) left top repeat-y,
-    url(images/reddot.png) right top repeat-y,
-    url(images/gooseshadow.png) 90% bottom no-repeat;
+  background: url(images/reddot.png) left top repeat-y, url(images/reddot.png) right top repeat-y, url(images/gooseshadow.png) 90% bottom no-repeat;
   background-color: rgba(255,255,255,.5);
 }
 
@@ -39,7 +36,7 @@ a:active {
 }
 
 h1 {
-  font: bold 1.5em Georgia, serif;
+  font: bold 1.5em 'Anuphan', sans-serif;
   text-shadow: .1em .1em .2em gray;
   color: #2f0147;
 }
