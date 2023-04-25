@@ -2,7 +2,6 @@
 /* CSS Document */
 body {
 	background: rgba(255,248,240,0.90) url("images/leaf.png") round center 100px fixed;
-	
 }
 
 header {
@@ -22,27 +21,26 @@ ul.breadcrumb {
   text-align: end;
 }
 
-/* Display list items side by side */
+
 ul.breadcrumb li {
   display: inline;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-/* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 18px;
   color: #392f5a ;
   content: "/\00a0";
 }
 
-/* Add a color to all links inside the list */
+
 ul.breadcrumb li a {
   color: #0275d8;
   text-decoration: none;
 }
 
-/* Add a color on mouse-over */
+
 ul.breadcrumb li a:hover {
   color: #356c1a;
   text-decoration: none;
@@ -59,6 +57,45 @@ ul.breadcrumb li a:active {
   background-color: #D8F2D5;
   font-family: 'Noto Serif Telugu', serif;
   font-size: 20px;
+  text-align: center;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(216,242,213,.90);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FF8811;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #005c53;
+}
+.sidenav a:active {
+  color: #c6ff0d;
+  background-color: #fff
+}
+
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 h1 {
